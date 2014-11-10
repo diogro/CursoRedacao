@@ -25,6 +25,7 @@ tufte :
 	bibtex tufte-book
 	lualatex tufte-book
 	lualatex tufte-book
+	mv tufte-book.pdf ./output/2014-RC-$(FILE).pdf
 
 	# Remove these files after the work is done.
 	rm  \
