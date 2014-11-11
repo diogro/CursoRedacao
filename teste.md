@@ -17,6 +17,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit rhoncus sa
 
 Donec convallis sollicitudin ligula convallis varius. Etiam ante odio, dapibus eget tincidunt sit amet, accumsan ut lacus. Nullam ac placerat arcu. Fusce ultricies eget mauris vel facilisis. Maecenas lacinia orci eget finibus sagittis. Etiam dapibus [@Lande1979] vehicula mauris et imperdiet. Donec sit amet interdum dolor. Pellentesque eget neque augue. Nulla facilisi. Curabitur in nulla arcu. Aliquam lorem est, facilisis vitae ante eu, aliquet vestibulum lectus. Quisque sit amet volutpat risus. Etiam tincidunt nibh quis consequat commodo. Vivamus rhoncus orci quis leo luctus rutrum. Phasellus sollicitudin rhoncus rutrum.
 
+\newpage
+
+ \begin{marginfigure}%
+  \includegraphics[width=\linewidth]{./figures/desviodominancia.png}
+  \caption{This is a margin figure.  The helix is defined by 
+    $x = \cos(2\pi z)$, $y = \sin(2\pi z)$, and $z = [0, 2.7]$.  The figure was
+    drawn using Asymptote (\url{http://asymptote.sf.net/}).}
+  \label{fig:marginfig}
+\end{marginfigure}
+
 # Resultados e discussão
 
 Quisque felis nisi, tincidunt id erat eget, eleifend convallis odio. Vivamus vehicula placerat porta. Nullam dictum varius dui tincidunt elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi at turpis vitae lectus ullamcorper porttitor. Donec sed posuere turpis. Phasellus in urna sed nunc auctor convallis. Nullam euismod lacus in lorem semper eleifend. Sed a ligula tincidunt, euismod augue sit amet, accumsan erat. In vel erat ac nisi mollis scelerisque. Vivamus at nisi sed neque lacinia hendrerit. Praesent pretium nibh euismod ipsum aliquam eleifend. Donec id interdum tortor. Mauris vel facilisis sapien.
