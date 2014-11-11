@@ -44,17 +44,13 @@
 %\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 
 $if(lang)$
-\ifxetex
-  \usepackage{polyglossia}
-  \setmainlanguage{$mainlang$}
-\else
-  \usepackage[$lang$]{babel}
-\fi
+\usepackage[$lang$]{babel}
 $endif$
 
 % add line numbers (Caleb McDaniel)
 $if(linenos)$
 \usepackage[modulo]{lineno}
+\modulolinenumbers[$linenos$]
 \linenumbers
 $endif$
 
@@ -64,7 +60,7 @@ $endif$
 %\author{$for(author)$ $author.name$$sep$ -$endfor$}
 \author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize $author.affiliation$ \newline\footnotesize $author.email$\vspace*{0.2in}\newline $endfor$}
 %\author{$for(author)$$author.name$ ($author.affiliation$)$sep$ \and $endfor$}
-\date{}
+\date{$date$}
 
 
 \begin{document}

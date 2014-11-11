@@ -3,7 +3,6 @@ FILE? = exercicio
 all :
 	pandoc \
 	$(FILE).md \
-	-M lang=portuges \
 	--latex-engine=lualatex \
 	--smart \
 	--biblatex \
