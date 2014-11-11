@@ -1,3 +1,17 @@
+---
+title: A Pandoc Markdown Article Starter
+author:
+- name: Kieran Healy
+  affiliation: Duke University
+  email: kjhealy@soc.duke.edu
+- name: Joe Bloggs
+  affiliation: University of North Carolina, Chapel Hill
+  email: joebloggs@unc.edu
+date: January 2014
+abstract: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+...
+ 
+
 # Resumo
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit rhoncus sapien \footnote{this is a footnote} vitae facilisis. Integer posuere, nibh vel tristique vehicula, eros lorem blandit metus, viverra hendrerit orci est a magna. Fusce nec ligula nec leo sollicitudin pulvinar vel sit amet nunc. Quisque lobortis, nisl sit amet egestas sodales, massa lorem vestibulum nibh, sit amet euismod metus massa vel tellus. Vestibulum molestie mauris massa, in dapibus augue sodales nec. Nullam cursus iaculis mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ullamcorper mollis condimentum.
