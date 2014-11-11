@@ -22,7 +22,7 @@ tufte :
 	bibtex tufte-book-body
 	lualatex tufte-book-body
 	lualatex tufte-book-body
-	#mv tufte-book-body.pdf ./output/2014-RC-$(FILE).pdf
+	mv tufte-book-body.pdf ./output/2014-RC-$(FILE).pdf
 
 	 #Remove these files after the work is done.
 	rm  \

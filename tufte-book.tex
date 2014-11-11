@@ -1,22 +1,6 @@
 \documentclass{tufte-handout}
 
-\usepackage{ifxetex,ifluatex}
 %\geometry{showframe}% for debugging purposes -- displays the margins
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[utf8]{inputenc}
-$if(euro)$
-  \usepackage{eurosym}
-$endif$
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-    \usepackage{xltxtra,xunicode}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
 
 \usepackage{amsmath}
 
@@ -26,9 +10,9 @@ $endif$
 \graphicspath{{graphics/}}
 
 % The following package makes prettier tables.  We're all about the bling!
-\usepackage{booktabs}
-
-\usepackage{longtable}
+\usepackage{longtable,booktabs}
+% url
+\usepackage{url}
 
 % The units package provides nice, non-stacked fractions and better spacing
 % for units.
@@ -55,12 +39,22 @@ $endif$
 \newcommand{\doccls}[1]{\texttt{#1}}% document class name
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 
+% use symbols instead of numbers for footnotes (Caleb McDaniel)
+% http://tex.stackexchange.com/questions/826/symbols-instead-of-numbers-as-footnote-markers
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
+% add line numbers (Caleb McDaniel)
+$if(linenos)$
+\usepackage[modulo]{lineno}
+\linenumbers
+$endif$
+
 $if(title)$
 \title{$title$}
 $endif$
-%\author{$for(author)$$author$$sep$\\$endfor$}
-%\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$} \newline\footnotesize \url{$author.email$}\vspace*{0.2in}\newline $sep$ \and $endfor$}
-\author{$for(author)$$author.name$ ($author.affiliation$)$sep$ \and $endfor$}
+%\author{$for(author)$ $author.name$$sep$ -$endfor$}
+\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize $author.affiliation$ \newline\footnotesize $author.email$\vspace*{0.2in}\newline $endfor$}
+%\author{$for(author)$$author.name$ ($author.affiliation$)$sep$ \and $endfor$}
 \date{}
 
 
