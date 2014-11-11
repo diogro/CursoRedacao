@@ -1,9 +1,6 @@
 FILE? = exercicio
 
 all :
-	pandoc -o ./output/$(FILE).pdf -M lang=portuges --template=template.latex --variable mainfont="FreeSerif" --latex-engine=xelatex --toc --bibliography library.bib --csl ./evolution.csl $(FILE).md
-
-tufte :
 	pandoc \
 	$(FILE).md \
 	-M lang=portuges \
