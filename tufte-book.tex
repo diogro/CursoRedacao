@@ -1,6 +1,22 @@
 \documentclass{tufte-handout}
 
+\usepackage{ifxetex,ifluatex}
 %\geometry{showframe}% for debugging purposes -- displays the margins
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+$if(euro)$
+  \usepackage{eurosym}
+$endif$
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
 
 \usepackage{amsmath}
 
@@ -8,10 +24,6 @@
 \usepackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
-
-\title{Projeto Doidera}
-\author[Diogo Melo]{Diogo Melo}
-\date{}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -43,16 +55,38 @@
 \newcommand{\doccls}[1]{\texttt{#1}}% document class name
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 
+$if(title)$
+\title{$title$}
+$endif$
+%\author{$for(author)$$author$$sep$\\$endfor$}
+%\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$} \newline\footnotesize \url{$author.email$}\vspace*{0.2in}\newline $sep$ \and $endfor$}
+\author{$for(author)$$author.name$ ($author.affiliation$)$sep$ \and $endfor$}
+\date{}
+
+
 \begin{document}
 
-\maketitle% this prints the handout title, author, and date
+$if(title)$
+\maketitle
+$endif$
 
- \input{tufte-book-body.tex}
+$if(toc)$
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
 
+$if(abstract)$
+\begin{abstract}
+\noindent $abstract$
+\end{abstract}
+$endif$
+
+$body$
 
 \bibliography{library}
 \bibliographystyle{plainnat}
-
-
 
 \end{document}
