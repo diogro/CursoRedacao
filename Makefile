@@ -23,6 +23,7 @@ tufte :
 	lualatex tufte-book-body
 	lualatex tufte-book-body
 	mv tufte-book-body.pdf ./output/2014-RC-$(FILE).pdf
+	mv tufte-book-body.tex ./output/2014-RC-$(FILE).tex
 
 	 #Remove these files after the work is done.
 	rm  \
@@ -30,8 +31,8 @@ tufte :
 	tufte-book-body.bbl \
 	tufte-book-body.blg \
 	tufte-book-body.log \
-	tufte-book-body.tex \
 	tufte-book-body.out 
+	#tufte-book-body.tex \
 	#tufte-book.bcf \
 	#tufte-book.run.xml \
 	#tufte-book.toc \

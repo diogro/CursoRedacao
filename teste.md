@@ -15,9 +15,19 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit rhoncus sapien \footnote{this is a footnote} vitae facilisis. Integer posuere, nibh vel tristique vehicula, eros lorem blandit metus, viverra hendrerit orci est a magna. Fusce nec ligula nec leo sollicitudin pulvinar vel sit amet nunc. Quisque lobortis, nisl sit amet egestas sodales, massa lorem vestibulum nibh, sit amet euismod metus massa vel tellus. Vestibulum molestie mauris massa, in dapibus augue sodales nec. Nullam cursus iaculis mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ullamcorper mollis condimentum.
 
-Donec convallis sollicitudin ligula convallis varius. Etiam ante odio, dapibus eget tincidunt sit amet, accumsan ut lacus. Nullam ac placerat arcu. Fusce ultricies eget mauris vel facilisis. Maecenas lacinia orci eget finibus sagittis. Etiam dapibus [@Lande1979] vehicula mauris et imperdiet. Donec sit amet interdum dolor. Pellentesque eget neque augue. Nulla facilisi. Curabitur in nulla arcu. Aliquam lorem est, facilisis vitae ante eu, aliquet vestibulum lectus. Quisque sit amet volutpat risus. Etiam tincidunt nibh quis consequat commodo. Vivamus rhoncus orci quis leo luctus rutrum. Phasellus sollicitudin rhoncus rutrum.
+Donec convallis sollicitudin ligula convallis varius. Etiam ante odio,
+dapibus eget tincidunt sit amet, accumsan ut lacus. Nullam ac placerat
+arcu. Fusce ultricies eget mauris vel facilisis. Maecenas lacinia orci
+eget finibus sagittis. Etiam dapibus [@Lande1979] vehicula mauris et
+imperdiet. Donec sit amet interdum dolor. Pellentesque eget neque augue.
+Nulla facilisi. Curabitur in nulla arcu. Aliquam lorem est, facilisis
+vitae ante eu, aliquet vestibulum lectus. Quisque sit amet volutpat
+risus. Etiam tincidunt nibh quis consequat commodo. Vivamus rhoncus orci
+quis leo luctus rutrum. Phasellus sollicitudin rhoncus rutrum.
+ 
+# Resultados e discussão
 
-\newpage
+Quisque felis nisi, tincidunt id erat eget, eleifend convallis odio. Vivamus vehicula placerat porta. Nullam dictum varius dui tincidunt elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi at turpis vitae lectus ullamcorper porttitor. Donec sed posuere turpis. Phasellus in urna sed nunc auctor convallis. Nullam euismod lacus in lorem semper eleifend. Sed a ligula tincidunt, euismod augue sit amet, accumsan erat. In vel erat ac nisi mollis scelerisque. Vivamus at nisi sed neque lacinia hendrerit. Praesent pretium nibh euismod ipsum aliquam eleifend. Donec id interdum tortor. Mauris vel facilisis sapien.
 
  \begin{marginfigure}%
   \includegraphics[width=\linewidth]{./figures/desviodominancia.png}
@@ -26,10 +36,6 @@ Donec convallis sollicitudin ligula convallis varius. Etiam ante odio, dapibus e
     drawn using Asymptote (\url{http://asymptote.sf.net/}).}
   \label{fig:marginfig}
 \end{marginfigure}
-
-# Resultados e discussão
-
-Quisque felis nisi, tincidunt id erat eget, eleifend convallis odio. Vivamus vehicula placerat porta. Nullam dictum varius dui tincidunt elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi at turpis vitae lectus ullamcorper porttitor. Donec sed posuere turpis. Phasellus in urna sed nunc auctor convallis. Nullam euismod lacus in lorem semper eleifend. Sed a ligula tincidunt, euismod augue sit amet, accumsan erat. In vel erat ac nisi mollis scelerisque. Vivamus at nisi sed neque lacinia hendrerit. Praesent pretium nibh euismod ipsum aliquam eleifend. Donec id interdum tortor. Mauris vel facilisis sapien.
 
 Maecenas quam mauris, sagittis ac ligula quis, placerat accumsan lacus. Phasellus ac mi malesuada, porttitor urna eu, eleifend sem. Integer dictum urna a ultrices eleifend. Vestibulum sed sollicitudin elit. Mauris porttitor mi orci, quis aliquam ante porttitor sed. Mauris et rhoncus mauris. Aliquam condimentum neque est, maximus iaculis nisl eleifend lacinia. Cras vel purus id purus rutrum dictum. Praesent sollicitudin mi risus, egestas lobortis mi feugiat nec. Nulla a ultricies magna. Sed augue velit, posuere nec dui at, elementum sollicitudin nisi. Donec ut malesuada nunc.
 
