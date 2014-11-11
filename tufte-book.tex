@@ -1,4 +1,4 @@
-\documentclass{tufte-handout}
+\documentclass[$if(lang)$$lang$,$endif$]{tufte-handout}
 
 %\geometry{showframe}% for debugging purposes -- displays the margins
 
@@ -42,6 +42,15 @@
 % use symbols instead of numbers for footnotes (Caleb McDaniel)
 % http://tex.stackexchange.com/questions/826/symbols-instead-of-numbers-as-footnote-markers
 %\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
+$if(lang)$
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage{$mainlang$}
+\else
+  \usepackage[$lang$]{babel}
+\fi
+$endif$
 
 % add line numbers (Caleb McDaniel)
 $if(linenos)$
