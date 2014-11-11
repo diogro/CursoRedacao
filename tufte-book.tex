@@ -49,9 +49,8 @@ $endif$
 
 % add line numbers (Caleb McDaniel)
 $if(linenos)$
-\usepackage[modulo]{lineno}
+\usepackage{lineno}
 \modulolinenumbers[$linenos$]
-\linenumbers
 $endif$
 
 $if(title)$
@@ -75,6 +74,10 @@ $if(toc)$
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
 }
+$endif$
+
+$if(linenos)$
+\linenumbers
 $endif$
 
 $if(abstract)$
